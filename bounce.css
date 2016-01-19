@@ -1,0 +1,23 @@
+.ball {
+  height: 50px;
+  width: 50px;
+  border-radius: 25px;
+  background-color: #00AABB;
+  position: absolute;
+  animation-name: bounce;
+  animation-duration: 1.5s;
+  animation-iteration-count: infinite;
+  animation-timing-function: cubic-bezier(.66,0,.38,1);
+  left: 0px;
+  top: 0px;
+}
+
+@keyframes bounce {
+  0%  { top:  50px;  left: 0px;   }
+  16% { top:  0px;                }
+  33% { top:  500px; left: 250px; }
+  50% { top:  200px;              }
+  66% { top:  500px; left: 415px; }
+  82% { top:  350px;              }
+  100% { top: 500px; left: 520px; }
+}
